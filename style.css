@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+Theme Name: Seattle Opt Out
+Theme URI: http://wordpress.org/themes/seattleoptout
+Author: Nectar Shakir
+Author URI: http://nectarshakir.com
+Description: This is a customized WordPress theme for Seattle Opt Out, 2016.
+Version: 1.0
+*/
+
+/* COLORS
+Deep Purple: #684685
+
+*/
+
+/*RESET */
+body, body * {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 auto;
+	box-sizing:border-box;
+}
+
+
+/*TEXT STYLES*/
+h1 {
+  margin-bottom: .5em;
+}
+
+h4, h5 {
+
+  color: #684685;
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+h2 {
+
+  color: #684685;
+  line-height: 2em;
+  margin-top: 2em;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#9F1D20;}
+
+a:hover, a:focus {
+	text-decoration:none;
+	color:#83C3C8;
+	}
+
+#logo h1 {
+  margin: 0;
+}
+
+#logo span {
+  color: #ffffff;
+}
+
+
+
+#nav-items  a:link, a:visited {
+  	text-decoration:none;
+  	color:#000000;}
+
+#nav-items  a:hover, a:focus {
+  	text-decoration:none;
+  	color:#000000;
+  	}
+
+#social  li {
+  padding: 1px;
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+}
+
+p {
+  line-height: 1.25em;
+}
+
+/* Home Page */
+#wrapper {
+  width: 100%;
+  margin: auto 0;
+  clear: both;
+  padding: 2em;
+}
+
+#main-nav {
+  width: 100%;
+	text-align:center;
+	padding-top: 1em;
+  }
+
+
+	.cta-news {
+		width: 33.3%;
+		float: left;
+		padding: .75em;
+	}
+
+	.border-wrapper {
+		border-top: solid thin #684685;
+		padding-top: 2em;
+	}
+
+	.border-sidebar {
+		border: solid thin #684685;
+	}
+
+
+#nav-items {
+  float: left;
+	border-top: solid thin #684685;
+	border-bottom: solid thin #684685;
+  width: 100%;
+  padding: 30px;
+  font-size: 120%;
+}
+
+#navigation ul li.current-menu-item a {
+color: #EBB700; /* and use bright gold */
+}
+
+#nav-items ul li{
+	list-style-type: none;
+  display: inline;
+  padding: 5%;
+}
+
+#content-wrapper {
+  width: 65%;
+  float: left;
+  line-height: 1.5em;
+
+}
+
+#content {
+  width: 75%;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+
+.cta-news img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 25%;
+  float: left;
+  padding-left: 5em;
+}
+
+.sidebar ul li {
+  margin-left: 2em;
+}
+
+#footer {
+width: 100%;
+clear: both;padding: 2em;
+}
+#footer ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5%;
+}
+
+#content-wrapper article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.cta-news article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+	float: left;
+
+}
+
+
+
+/* ------- Post Thumbnails ----- */
+#content-wrapper img.wp-post-image {}
+#content-wrapper img.attachment-thumbnail {
+	float: left;
+	margin: 4px 20px 0 0;
+}
+#content-wrapper img.attachment-medium {}
+#content-wrapper img.attachment-large {}
+#content-wrapper img.attachment-full {}
