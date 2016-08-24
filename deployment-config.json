@@ -4,6 +4,6 @@
     "username": "nectar@nectarshakir.com",
     "password": "Cheezit6821!",
     "port": 21,
-    "remotePath": "/i_am_an_educator",
+    "remotePath": "public_html",
     "uploadOnSave": true
 }

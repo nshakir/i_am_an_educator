@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 /*
-Theme Name: Seattle Opt Out
-Theme URI: http://wordpress.org/themes/seattleoptout
+Theme Name: I Am an Educator
+Theme URI: http://wordpress.org/themes/iamaneducator
 Author: Nectar Shakir
 Author URI: http://nectarshakir.com
 Description: This is a customized WordPress theme for Seattle Opt Out, 2016.
@@ -35,7 +35,6 @@ body {
 
 /*TEXT STYLES*/
 h1 {
-  margin-bottom: .5em;
 	font-size: 350%;
 }
 
@@ -49,8 +48,15 @@ h4, h5 {
 h2 {
 
   color: #684685;
-  line-height: 2em;
-  margin-top: 2em;
+  margin-top: 1.75em;
+}
+
+h2.blogs {
+	margin-top: 3em;
+}
+
+h3.header-blog {
+	margin-top: 1.75em;
 }
 
 span.title {
@@ -63,7 +69,7 @@ a:link, a:visited {
 
 a:hover, a:focus {
 	text-decoration:none;
-	color:#83C3C8;
+	color:#000;
 	}
 
 #logo h1 {
@@ -97,22 +103,29 @@ p {
 }
 
 .cta-news p {
-	text-align: center;
 	line-height: 2em;
 }
+#grid-blog {
+	width: 50%;
+	display: block;
+	float: left;
+	padding-left: 2em;
+	font-size: 75%;
+}
+
 
 /* Home Page */
 #wrapper {
   width: 100%;
   margin: auto 0;
   clear: both;
-  padding: 2em;
+  padding: 1.25em;
 }
 
 #main-nav {
   width: 100%;
 	text-align:center;
-	padding-top: 1em;
+	padding-top: .5em;
   }
 
 
@@ -131,7 +144,10 @@ p {
 
 	.border-wrapper {
 		border-top: solid thin #684685;
-		padding-top: 2em;
+		width: 33.33%
+		display: inline-block;
+		float: left;
+		clear: both;
 	}
 
 	.border-sidebar {
@@ -145,22 +161,105 @@ p {
 	border-top: solid thin #684685;
 	border-bottom: solid thin #684685;
   width: 100%;
-  padding: .75em;
-  font-size: 120%;
-}
-
-#navigation ul li.current-menu-item a {
-color: #EBB700; /* and use bright gold */
 }
 
 #nav-items ul li{
 	list-style-type: none;
   display: inline;
-  padding: 5%;
+	position: relative;
+	font-weight:700;
+  font-size: 120%;
 }
+
+
+#main-nav {
+  text-align: center;
+  float:right;
+
+}
+
+#nav-items li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  width:14%;
+  float:left;
+  line-height:50px;
+  text-align:center;
+}
+
+#nav-items li.wide {
+width:20%;
+}
+
+#nav-items > li a {
+  text-decoration: none;
+}
+
+#nav-items > li a.current {
+  background: #fff;
+  color: #000;
+}
+
+#nav-items ul li:hover a {
+  background: #fff;
+  color: #000;
+}
+
+#nav-items > li a {
+  display: block;
+  color: #000;
+}
+
+#nav-items > li:hover a {
+  background: #fff;
+  color: #000;
+}
+
+
+#nav-items ul.sub-menu {
+  text-align: left;
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  z-index: 20;
+  width:15em;
+  text-indent:1em;
+	left: 0;
+	font-size: 75%;
+}
+
+#nav-items ul.sub-menu li {
+
+  display: block;
+  float: none;
+  font-size: 1em;
+  position: relative;
+}
+
+#nav-items ul.sub-menu li a {
+
+}
+
+
+
+#nav-items li:hover > ul.sub-menu{
+
+  display: block;
+
+}
+
+/*End Nav*/
 
 #content-wrapper {
   width: 65%;
+  float: left;
+  line-height: 1.5em;
+
+}
+
+#content-wrapper-subpage {
+  width: 85%;
   float: left;
   line-height: 1.5em;
 
@@ -172,15 +271,25 @@ color: #EBB700; /* and use bright gold */
   margin: 0 auto;
 }
 
+#news-post {
+	padding-bottom: 2em;
+	text-align: justify;
+}
+
 .cta-news img {
   display: block;
   margin: 0 auto;
 }
 
 .sidebar {
-  width: 25%;
+  width: 30%;
   float: left;
   padding-left: 5em;
+}
+
+.sidebar img {
+	margin: 0 auto;
+	text-align:center;
 }
 
 .sidebar ul li {
@@ -200,6 +309,7 @@ clear: both;padding: 2em;
 #content-wrapper article.post-excerpt {
 	overflow: hidden;
 	margin-bottom: 20px;
+	text-align:justify;
 }
 
 .cta-news article.post-excerpt {
@@ -207,6 +317,10 @@ clear: both;padding: 2em;
 	margin-bottom: 20px;
 	float: left;
 
+}
+
+#comments {
+	clear: both;
 }
 
 
@@ -220,3 +334,110 @@ clear: both;padding: 2em;
 #content-wrapper img.attachment-medium {}
 #content-wrapper img.attachment-large {}
 #content-wrapper img.attachment-full {}
+
+	/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
